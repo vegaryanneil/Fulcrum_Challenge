@@ -6,8 +6,12 @@ import CostList from './Components/CostList';
 import Expenses from './Components/Expenses';
 import Header from './Components/Header'
 
+import { GlobalProvider } from './Context/GlobalState'
+
 const App = () => {
   return (
+    <GlobalProvider>
+
     <div className="container">
       <Header />  
       <div className="balance-container">
@@ -19,7 +23,8 @@ const App = () => {
         </div>
       </div>
     </div>
-  )
+    </GlobalProvider>
+  );
 }
 
 export default App;

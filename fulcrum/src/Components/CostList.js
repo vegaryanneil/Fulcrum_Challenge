@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { GlobalContext } from '../Context/GlobalState'
 
-const costlist = () => {
+const CostList = () => {
+    const context = useContext(GlobalContext);
+
+
+    
     return (
         <div>
           <h3>History</h3>
@@ -11,4 +16,4 @@ const costlist = () => {
     )
 }
 
-export default costlist
+export default CostList
