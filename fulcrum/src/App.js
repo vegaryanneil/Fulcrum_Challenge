@@ -1,9 +1,10 @@
 import React from 'react'
 import './App.css';
-import Balance from './Components/balance';
-import CostList from './Components/costlist';
-import Expenses from './Components/expenses';
-import Header from './Components/header'
+import AddCost from './Components/AddCost';
+import Balance from './Components/Balance';
+import CostList from './Components/CostList';
+import Expenses from './Components/Expenses';
+import Header from './Components/Header'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <div className="expense-container">
         <Expenses />
         <CostList />
+        <AddCost />
         </div>
       </div>
     </div>
